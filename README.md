@@ -7,7 +7,9 @@
 
 ## GIF EXAMPLE
 
-![Android app ListyCity running, showing adding city, updating city, and deleting city with persistance from Firebase.](/ListyCity_Lab5_example.gif)
+![Android app ListyCity running, showing adding city, updating city, and deleting city with persistance from Firebase.](/ListyCity_Lab5_example.gif)  
+  
+![Firestore database updating realtime with app.](/ListyCity_Lab5_Firestore_example.gif)  
 
 
 ## References and Resources
