@@ -5,6 +5,9 @@
 - **Full Name:** `Riley Whitford`
 - **CCID:** `whitfor1`
 
+## GIF EXAMPLE
+
+
 ## References and Resources
 
 [1] Firebase unresolved issue |  https://stackoverflow.com/questions/70212541/firebase-in-android-firestore-is-unresolved-reference  
@@ -23,7 +26,7 @@ https://developer.android.com/reference/kotlin/androidx/compose/foundation/lazy/
 
 Portions of code were reused and slightly altered from CMPUT301 Lab 03 - rjwonderchild repository submission.  
 
-# LLM Citation
+## LLM Citation
 
 **PROMPT 1 : Agent ChatGPT : October 8, 2026**
 
@@ -69,7 +72,7 @@ Vancouver, BC is deleted and replaced. What could be a remedy? This is also the 
 
 **PROMPT 1 ANSWER**  
 
-es. The bug is caused by how you're assigning Firestore document IDs, rather than your doesCityExist() function.
+Yes. The bug is caused by how you're assigning Firestore document IDs, rather than your doesCityExist() function.
 Your duplicate checker considers a city unique based on two properties:
 - City name
 - Province
@@ -115,12 +118,14 @@ cities/
 
 
 First, create a helper function in CityRepository:
+```C
 private fun cityDocumentId(city: City): String {
     val name = city.name.trim().lowercase()
     val province = city.province.trim().lowercase()
 
     return "${name}_${province}"
 }
+```
 
 
 This assumes your city/province fields contain ordinary names without /, and that this normalization is sufficient for your assignment.
